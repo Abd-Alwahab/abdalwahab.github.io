@@ -1,0 +1,53 @@
+@import "abstracta/varibales";
+@import "abstracta/mixsins";
+@import "abstracta/functions";
+
+@import "base/base";
+@import "base/typograpgy";
+@import "base/utilties";
+@import "base/animations";
+
+@import "components/buttons";
+@import "components/card";
+@import "components/compotistion";
+@import "components/feature-box";
+@import "components/story";
+@import "components/bg-video.scss";
+@import "components/form";
+@import "components/poopup";
+@import "components/apps";
+
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+
+@import "pages/home";
+
+
+.github-account {
+
+
+    position: relative;
+
+
+    &__box {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    
+    }
+
+    &__logo {
+        width: 20rem;
+        height: auto;
+        border-radius: 50%;
+        display: block;
+        margin: 3rem auto;       
+    }
+}

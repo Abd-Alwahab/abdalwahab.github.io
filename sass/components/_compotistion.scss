@@ -1,0 +1,77 @@
+
+.compotsion {
+    position: relative;
+    
+        &__photo {
+            width: 55%;
+            box-shadow: 1rem 1rem 2rem rgba($color-gray,0.5);
+            border-radius: 5px;
+            position: absolute;
+            z-index: 10;
+            transition: all .3s ease;
+            outline-offset: .5rem;
+
+            @include query(tab-port) {
+
+                width: 33%;
+                position: relative;
+                float: left;
+                box-shadow: .5rem .5rem 1rem rgba($color-gray,0.3);
+
+            }
+
+            &--p1 {
+                left: 0;
+                top: -2rem;
+
+                @include query(tab-port) {
+
+                   top: 0;
+    
+                }
+
+            }
+
+            &--p2 {
+                right: 0;
+                top: 2rem;
+
+                @include query(tab-port) {
+
+                    top: -1rem;
+                    transform: scale(1.1);
+                     
+    
+                }
+            }
+
+            &--p3 {
+                left: 6rem;
+                top: 6rem;
+
+                @include query(tab-port) {
+
+                    top: 0;
+                    left: 0;
+
+                }
+
+            }
+
+
+            &:hover {
+
+                transform: scale(1.2) translateY(-.6rem);
+                box-shadow: 2rem 4rem 3rem rgba($color-white,0.5);
+                z-index: 30;
+                outline: 1.2rem solid $color-gray;              
+
+            }
+
+        }
+
+
+        &:hover &__photo:not(:hover) {
+               transform: scale(.95); 
+        } 
+    }

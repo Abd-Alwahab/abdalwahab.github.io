@@ -1,0 +1,19 @@
+
+.apps-box {
+
+
+    font-size: 1.3rem;
+    color: $color-white;
+    text-align: center;
+    background: rgba($color-black, .6);
+    padding: 2rem 3rem;
+    
+
+    &__img {
+        
+        clip-path: circle(50% at 50% 50%);
+        transform: scale(.6);
+    }
+
+
+}

@@ -1,0 +1,86 @@
+
+.footer {
+    padding: 10rem 0;
+    background-color: $color-gray-dark;
+    font-size: 1.6rem;
+
+    @include query(tab-port) {
+        padding: 8rem 0;
+    }
+
+
+    &__box {
+        text-align: center;
+        margin-bottom: 8rem;
+
+        @include query(tab-port) {
+
+         margin-bottom: 4rem;         
+        }
+        
+    }
+
+    &__nav {
+       
+        padding-top: 2rem;
+        border-top: 2px solid $color-white;
+        display: inline-block;
+
+        @include query(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+
+        display: inline-block;
+        
+
+        &:not(:last-child) {
+            margin-right: 1.4rem;
+        }
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    &__link:link,
+    &__link:visited {
+
+        display: inline-block;
+        text-decoration: none;
+        color: $color-white;
+        transition: all .5s;
+        
+    }
+
+    &__link:hover,
+    &__link:active {
+
+        color: $color-red-dark;
+        transform: translateY(-5px);
+       
+
+    }
+
+    &__text {
+        border-top: 2px solid $color-white;
+        padding-top: 2rem;
+        float: right;
+        width: 70%;
+        color: $color-white;
+
+        @include query(tab-port) {
+            width: 100%;
+            float: none;
+        }
+    }
+}
