@@ -89,7 +89,7 @@
 .contact {
 
     background-image:linear-gradient(105deg,rgba($color-white, .5 ) 0%,rgba($color-white, .5 ) 50%,transparent 50%),
-     url(../images/image-girrl.jpeg);
+     url(../images/about_two.jpeg);
     background-size: cover;
     background-position: top;
     box-shadow: 0 1rem 2rem rgba($color-white,.5);
@@ -99,7 +99,7 @@
     @include query(tab-land) {
 
         background-image:linear-gradient(105deg,rgba($color-white, .5 ) 0%,rgba($color-white, .5 ) 30%,transparent 30%),
-        url(../../images/image-girrl.jpeg);
+        url(../images/small-images/form-image-small.jpeg);
        
     }
 
