@@ -320,6 +320,10 @@ body {
   .compotsion:hover .compotsion__photo:not(:hover) {
     transform: scale(0.95); }
 
+.paragrph {
+  color: #fff;
+  line-height: 1.8; }
+
 .feature-box {
   font-size: 1.5rem;
   padding: 2.5rem;
@@ -559,6 +563,39 @@ body {
   .apps-box__img {
     clip-path: circle(50% at 50% 50%);
     transform: scale(0.6); }
+
+.webapps {
+  padding: 20rem 0;
+  background-image: linear-gradient(rgba(7, 2, 2, 0.774), rgba(0, 0, 0, 0.733));
+  margin-top: -15rem;
+  width: 100%; }
+
+.web-box {
+  box-shadow: .5rem .5rem .8rem #000;
+  margin: 1rem;
+  background-color: #222;
+  text-align: center;
+  padding-bottom: 2rem; }
+  .web-box__img img {
+    width: 100%;
+    margin-bottom: 4rem; }
+  .web-box__desc {
+    margin-bottom: 2rem; }
+    .web-box__desc ul {
+      list-style: none; }
+    .web-box__desc li {
+      font-size: 1.4rem;
+      color: #fff;
+      padding-bottom: 1rem;
+      width: 80%;
+      margin: .5rem auto; }
+      .web-box__desc li:not(:last-of-type) {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #000; }
+
+.btn-web {
+  color: #555;
+  box-shadow: 0.4rem 0.4rem 0.4rem black; }
 
 .row {
   max-width: 114rem;
@@ -806,9 +843,7 @@ body {
 
 .cards-section {
   background-image: linear-gradient(to right bottom, #1c233b, #000);
-  padding: 20rem 0;
-  margin-top: -15rem;
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); }
+  padding: 20rem 0; }
   @media (max-width: 56.25em) {
     .cards-section {
       padding: 15rem 0; } }

@@ -1,0 +1,60 @@
+
+
+.webapps {
+    padding: 20rem 0;
+   background-image: linear-gradient(rgba(7, 2, 2, 0.774),rgba(0, 0, 0, 0.733));
+    margin-top: -15rem;
+    width: 100%;
+}
+
+.web-box {
+
+    box-shadow: .5rem .5rem .8rem #000;
+    margin: 1rem;
+    background-color: #222;
+    text-align: center;
+    padding-bottom: 2rem;
+
+  
+
+    &__img img{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    &__desc {
+
+        margin-bottom: 2rem;
+
+        & ul {
+            list-style: none;
+           
+
+        }
+
+        & li {
+
+            font-size: 1.4rem;
+            color: #fff;
+            padding-bottom: 1rem;
+            width: 80%;
+            margin: .5rem auto;
+
+        
+
+            &:not(:last-of-type) {
+                margin-bottom: 1rem;
+                border-bottom: 1px solid #000;
+                
+            }
+        }
+    }
+
+
+}
+
+
+.btn-web {
+    color: #555;
+    box-shadow: .4rem .4rem .4rem rgb(0, 0, 0);
+}
