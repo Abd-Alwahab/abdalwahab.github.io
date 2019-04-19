@@ -6,6 +6,7 @@
     padding: 6rem;
     padding-left: 9rem;
     border-radius: 3px;
+    
     color: $color-black;
     font-size: 1.6rem;
     // clip-path: polygon( 7% 0 , 100% 0 , 94% 100%, 0 100%);
@@ -27,8 +28,8 @@
 
     &__shape {
 
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
         background-color: $color-blue-light;
         float: left;
         shape-outside: circle(50% at 50% 50%);
@@ -46,13 +47,20 @@
 
 
     &__img {
+       
         height: 100%;
-        transform: translate(-4rem) scale(1.3);
+        // transform: translate(-4rem) scale(1.3);
         transition: all .5s; 
        
     }
     
     &__text {
+
+
+        p {
+            font-size: 1.6rem;
+            line-height: 1.6;
+        }
 
     transform: skewX(12deg);
     @include query(phone) {
@@ -84,7 +92,7 @@
     }
 
     &:hover &__img {
-        transform: translate(-4rem) scale(1);
+        // transform: translate(-4rem) scale(1);
         filter: blur(3px) brightness(85%);    
     }
 }
