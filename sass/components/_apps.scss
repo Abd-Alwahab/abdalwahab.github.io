@@ -1,19 +1,66 @@
+.app--section {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    height: 50rem;
+
+}
 
 .apps-box {
 
-
+    width: 33.333%;
     font-size: 1.3rem;
     color: $color-white;
     text-align: center;
     background: rgba($color-black, .6);
-    padding: 2rem 3rem;
-    
+    padding: 2rem 2rem;
+    height: 100%;
+
+    P {
+        line-height: 1.6;
+        word-spacing: 2px;
+    }
 
     &__img {
         
         clip-path: circle(50% at 50% 50%);
-        transform: scale(.6);
+        transform: scale(.4);
     }
 
 
+    .app__content {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    &:hover .app__content {
+
+    
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:hover {
+        background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+
+    }
+    
+
 }
+
+
+.app--one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.788)), url(../../images/screen_two.png);
+    background-size: cover;
+}
+
+
+
+.app--two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.788)), url(../../images/screen_shot.png);
+    background-size: cover;
+}
+
+
