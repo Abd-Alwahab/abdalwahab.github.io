@@ -562,19 +562,23 @@ body {
   justify-content: center;
   box-sizing: border-box;
   flex-wrap: wrap;
-  height: 50rem; }
+  height: 55rem; }
+  .app--section > div:not(:last-of-type) {
+    margin-right: 4rem; }
 
 .apps-box {
-  width: 33.333%;
+  width: 30%;
   font-size: 1.3rem;
   color: #fff;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
-  padding: 2rem 2rem;
-  height: 100%; }
+  padding: 4rem;
+  height: 100%;
+  border-radius: 1rem; }
   .apps-box P {
     line-height: 1.6;
-    word-spacing: 2px; }
+    word-spacing: 2px;
+    font-size: 1.4rem; }
   .apps-box__img {
     clip-path: circle(50% at 50% 50%);
     transform: scale(0.4); }
@@ -590,7 +594,8 @@ body {
 
 .app--one {
   background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.788)), url(../../images/screen_two.png);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .app--two {
   background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.788)), url(../../images/screen_shot.png);
@@ -808,6 +813,13 @@ body {
   @media (max-width: 56.25em) {
     .cards-section {
       padding: 15rem 0; } }
+
+.apps-section {
+  padding: 20rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/about_two.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin-top: -15rem; }
 
 .github-section {
   padding: 25rem 0;

@@ -3,23 +3,32 @@
     justify-content: center;
     box-sizing: border-box;
     flex-wrap: wrap;
-    height: 50rem;
+    height: 55rem;
+    // padding: 8rem 0;
+
+    & > div:not(:last-of-type) {
+        margin-right: 4rem;
+    }
 
 }
 
 .apps-box {
 
-    width: 33.333%;
+    width: 30%;
     font-size: 1.3rem;
     color: $color-white;
     text-align: center;
     background: rgba($color-black, .6);
-    padding: 2rem 2rem;
+    padding: 4rem;
     height: 100%;
+    border-radius: 1rem;
+
+
 
     P {
         line-height: 1.6;
         word-spacing: 2px;
+        font-size: 1.4rem;
     }
 
     &__img {
@@ -54,6 +63,7 @@
 .app--one {
     background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.788)), url(../../images/screen_two.png);
     background-size: cover;
+    background-position: center;
 }
 
 
