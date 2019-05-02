@@ -3,6 +3,11 @@
 
 .navigation {
 
+    position: fixed;
+    height: 6rem;
+    background-color: #fff;
+    z-index: 9999;
+    width: 100%;
 
     &__content {
 
@@ -11,7 +16,8 @@
     max-width: 70%;
     margin: 0 auto;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    height: 100%;
 
     }
     
@@ -62,6 +68,18 @@
 }
 
 
+
+.nav-stiky {
+
+    background-color: #999999;
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1rem 0;
+
+} 
 
 
 
