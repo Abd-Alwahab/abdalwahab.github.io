@@ -77,6 +77,9 @@ body {
   .paragrph:not(:last-child) {
     margin-bottom: 2rem; }
 
+.black {
+  color: #000; }
+
 .utilties-center {
   text-align: center; }
 
@@ -382,8 +385,12 @@ body {
   .story__text {
     transform: skewX(12deg); }
     .story__text p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       line-height: 1.6; }
+    .story__text h3 {
+      color: #222;
+      font-size: 1.9rem;
+      text-transform: none; }
     @media (max-width: 37.5em) {
       .story__text {
         transform: translateX(-3rem) skewX(0); } }
@@ -602,22 +609,24 @@ body {
   background-size: cover; }
 
 .reactapps {
-  margin-top: -15rem;
-  padding: 20rem 0;
+  padding: 10rem 0;
   width: 100%;
-  background-color: #000;
-  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 95%); }
+  background-color: #999; }
+  .reactapps h3 {
+    color: #000;
+    text-align: center; }
 
 .webapps {
-  padding: 20rem 0;
-  background-image: linear-gradient(rgba(7, 2, 2, 0.774), rgba(0, 0, 0, 0.733));
-  margin-top: -15rem;
+  padding: 10rem 0;
+  background-image: linear-gradient(rgba(247, 247, 247, 0.774), rgba(0, 0, 0, 0.733));
   width: 100%; }
+  .webapps h3 {
+    color: #222; }
 
 .web-box {
   box-shadow: .5rem .5rem .8rem #000;
   margin: 1rem;
-  background-color: #222;
+  background-color: #fff;
   text-align: center;
   padding-bottom: 2rem; }
   .web-box__img img {
@@ -628,8 +637,8 @@ body {
     .web-box__desc ul {
       list-style: none; }
     .web-box__desc li {
-      font-size: 1.4rem;
-      color: #fff;
+      font-size: 1.6rem;
+      color: #000;
       padding-bottom: 1rem;
       width: 80%;
       margin: .5rem auto; }
@@ -638,8 +647,9 @@ body {
         border-bottom: 1px solid #000; }
 
 .btn-web {
-  color: #555;
-  box-shadow: 0.4rem 0.4rem 0.4rem black; }
+  color: #000;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
+  background-color: #d8811e; }
 
 .row {
   max-width: 114rem;
@@ -750,26 +760,31 @@ body {
         width: 100%;
         float: none; } }
 
-.navigation__content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 70%;
-  margin: 0 auto;
-  align-items: center;
-  padding: 1rem 0; }
-
-.navigation__list {
-  display: flex;
-  list-style: none; }
-
-.navigation__item:not(:last-child) {
-  margin-right: 1.7rem; }
-
-.navigation__link {
-  color: #999;
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: bold; }
+.navigation {
+  position: fixed;
+  height: 6rem;
+  background-color: #fff;
+  z-index: 9999;
+  width: 100%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.466); }
+  .navigation__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2rem 0;
+    height: 100%; }
+  .navigation__list {
+    display: flex;
+    list-style: none; }
+  .navigation__item:not(:last-child) {
+    margin-right: 1.7rem; }
+  .navigation__link {
+    color: #999;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold; }
 
 .logo {
   display: flex;
@@ -783,8 +798,17 @@ body {
     font-weight: bold;
     color: #999; }
 
+.nav-stiky {
+  background-color: #999999;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 1rem 0; }
+
 .about-section {
-  background-image: linear-gradient(to right bottom, #1c233b, #000);
+  background-color: #dddddd;
   padding: 20rem 0;
   margin-top: -15vh;
   text-align: center; }
@@ -795,12 +819,23 @@ body {
     display: flex;
     justify-content: center; }
 
+.about {
+  width: 80%;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff; }
+  .about p {
+    line-height: 1.8;
+    font-size: 2rem;
+    color: #000; }
+
 .feature-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78)), url(../images/about_two.jpeg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   padding: 20rem 0;
   margin-top: -15rem; }
   @media (max-width: 56.25em) {
@@ -808,7 +843,7 @@ body {
       padding: 15rem 0; } }
 
 .cards-section {
-  background-image: linear-gradient(to right bottom, #1c233b, #000);
+  background-image: linear-gradient(to right bottom, #999, #777);
   padding: 20rem 0; }
   @media (max-width: 56.25em) {
     .cards-section {
@@ -823,7 +858,11 @@ body {
 
 .github-section {
   padding: 25rem 0;
-  background-image: linear-gradient(#000, #1c233b); }
+  background-image: linear-gradient(#222); }
+  .github-section h3 {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 2rem; }
 
 .stories-section {
   padding: 10rem 0;
