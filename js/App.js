@@ -4,22 +4,18 @@ $('.about--btn--js').click(function() {
 });
 
 
-$('.courses--btn--js').click(function() {
+$('.reviews--btn--js').click(function() {
 
-    $('html body').animate({scrollTop: $('.cards-section').offset().top} , 1000)
+    $('html body').animate({scrollTop: $('.stories-section').offset().top} , 1000)
 });
 
 
-$('.apps--btn--js').click(function() {
+$('.github--btn--js').click(function() {
 
-    $('html body').animate({scrollTop: $('.apps-section').offset().top} , 1000)
+    $('html body').animate({scrollTop: $('.github-section').offset().top} , 1000)
 });
 
 
-$('.websites--btn--js').click(function() {
-
-    $('html body').animate({scrollTop: $('.reactapps').offset().top} , 1000)
-});
 
 
 
@@ -29,3 +25,9 @@ $('.skills--btn--js').click(function() {
 });
 
 
+
+
+$('.web--btn--js').click(function() {
+
+    $('html body').animate({scrollTop: $('.reactapps').offset().top} , 1000)
+});

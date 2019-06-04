@@ -3,9 +3,7 @@
     justify-content: center;
     box-sizing: border-box;
     flex-wrap: wrap;
-    height: 55rem;
-    // padding: 8rem 0;
-
+  
     & > div:not(:last-of-type) {
         margin-right: 4rem;
     }
