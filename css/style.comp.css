@@ -225,11 +225,11 @@ body {
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture-1 {
-      background-image: linear-gradient(to right bottom, #000, #1c233b), url(../images/small-images/react-course-small.png); }
+      background-image: linear-gradient(to right bottom, #000, #1c233b), url(../images/frontend-course.png); }
     .card__picture-2 {
       background-image: linear-gradient(to right bottom, #000, #1c233b), url(../images/small-images/java-course-small.png); }
     .card__picture-3 {
-      background-image: linear-gradient(to right bottom, #494bbe, #0a0c9b), url(../images/small-images/kotlin-course-small.png); }
+      background-image: linear-gradient(to right bottom, #494bbe, #0a0c9b), url(../images/kotlin-course.png); }
   .card__title {
     font-size: 2.4rem;
     color: #fff;
@@ -568,8 +568,7 @@ body {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  flex-wrap: wrap;
-  height: 55rem; }
+  flex-wrap: wrap; }
   .app--section > div:not(:last-of-type) {
     margin-right: 4rem; }
 
@@ -694,8 +693,8 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78)), url(../images/header.jpeg);
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78)), url(../images/my-background.jpg);
+  background-position: top;
   background-attachment: fixed;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
@@ -796,7 +795,8 @@ body {
   .logo__text {
     font-size: 2.3rem;
     font-weight: bold;
-    color: #999; }
+    color: #999;
+    text-decoration: none; }
 
 .nav-stiky {
   background-color: #999999;
@@ -853,8 +853,7 @@ body {
   padding: 20rem 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/about_two.jpeg);
   background-size: cover;
-  background-position: center;
-  margin-top: -15rem; }
+  background-position: center; }
 
 .github-section {
   padding: 25rem 0;
