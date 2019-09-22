@@ -9,6 +9,10 @@
     z-index: 9999;
     width: 100%;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.466);
+    
+    @include query(phone) {
+        height: 12rem;
+}
 
     &__content {
 
@@ -19,6 +23,16 @@
     align-items: center;
     padding: 2rem 0;
     height: 100%;
+   
+
+    @include query(tab-port) {
+            max-width: 90%;
+
+    }
+
+    @include query(phone) {
+        flex-direction: column;
+}
 
     }
     
